@@ -33,4 +33,4 @@ Version ubuntu16.04-py3-tf114-gpu
     # pip
     python3 -m pip install --upgrade setuptools pip
     python3 -m pip install tensorflow-gpu==1.14.0
-    python3 -m pip install h5py scipy scikit-learn keras==2.1 numpy matplotlib
+    python3 -m pip install h5py scipy scikit-learn keras==2.1 numpy matplotlib numba
