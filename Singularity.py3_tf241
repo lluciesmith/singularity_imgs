@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: ubuntu
+From: ubuntu:18.04
 
 %help
 To start your container simply try
