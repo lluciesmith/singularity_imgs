@@ -32,3 +32,12 @@ Version ubuntu16.04-py3-tf241-gpu
     python3 -m pip install --upgrade setuptools pip
     python3 -m pip install tensorflow==2.4.1
     python3 -m pip install h5py scipy scikit-learn keras==2.4 numpy matplotlib numba pynbody 
+    
+%test
+    grep -q NAME=\"Ubuntu\" /etc/os-release
+    if [ $? -eq 0 ]; then
+        echo "Container base is Ubuntu as expected."
+    else
+        echo "Container base is not Ubuntu."
+    fi
+    
