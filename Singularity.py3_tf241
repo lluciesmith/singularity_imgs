@@ -8,8 +8,6 @@ singularity exec THIS_CONTAINER.simg bash
 To use GPUs, try
 singularity exec --nv THIS_CONTAINER.simg bash
 
-Container based on recipe by Joao Caldeira
-
 %labels
 Maintainer Luisa
 Version ubuntu16.04-py3-tf114-gpu
@@ -24,7 +22,7 @@ Version ubuntu16.04-py3-tf114-gpu
 
 %post
     # add wilson cluster mount points
-    mkdir /scratch /data /lfstev
+    # mkdir /scratch /data /lfstev
 
     # apt-get
     apt-get -y update
