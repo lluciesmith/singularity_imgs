@@ -10,7 +10,7 @@ singularity exec --nv THIS_CONTAINER.simg bash
 
 %labels
 Maintainer Luisa
-Version ubuntu16.04-py3-tf114-gpu
+Version ubuntu16.04-py3-tf241-gpu
 
 #------------
 # Global installation
