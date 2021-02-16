@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: nvidia/cuda:10.0-cudnn7-devel-ubuntu16.04
+From: ubuntu
 
 %help
 To start your container simply try
@@ -30,5 +30,5 @@ Version ubuntu16.04-py3-tf241-gpu
 
     # pip
     python3 -m pip install --upgrade setuptools pip
-    # python3 -m pip install tensorflow==2.4.1
+    python3 -m pip install tensorflow==2.4.1
     python3 -m pip install h5py scipy scikit-learn keras==2.4 numpy matplotlib numba pynbody 
