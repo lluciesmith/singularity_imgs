@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: ubuntu:18.04
+From: nvidia/cuda:11.2.1-cudnn8-devel-ubuntu18.04
 
 %help
 To start your container simply try
@@ -16,9 +16,9 @@ Version ubuntu18.04-py3-tf241
 # Global installation
 #------------
 # %environment
-    # export XDG_RUNTIME_DIR=/tmp/$USER
-    # export LD_LIBRARY_PATH=/usr/local/cuda/lib64:/usr/local/cuda/lib64/stubs:${LD_LIBRARY_PATH}
-    # export CUDA_DEVICE_ORDER=PCI_BUS_ID
+    export XDG_RUNTIME_DIR=/tmp/$USER
+    export LD_LIBRARY_PATH=/usr/local/cuda/lib64:/usr/local/cuda/lib64/stubs:${LD_LIBRARY_PATH}
+    export CUDA_DEVICE_ORDER=PCI_BUS_ID
 
 %post
     # add wilson cluster mount points
